@@ -1,6 +1,6 @@
-package service;
+package com.keyin.service;
 
-import model.TreeNode;
+import com.keyin.model.TreeNode;
 
 public class BinarySearchTree {
     private TreeNode root;

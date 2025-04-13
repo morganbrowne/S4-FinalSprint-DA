@@ -1,9 +1,9 @@
-package controller;
+package com.keyin.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import model.TreeNode;
-import model.TreeRecord;
-import service.TreeService;
+import com.keyin.model.TreeNode;
+import com.keyin.model.TreeRecord;
+import com.keyin.service.TreeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

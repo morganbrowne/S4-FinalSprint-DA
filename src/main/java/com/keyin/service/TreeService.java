@@ -1,12 +1,13 @@
-package service;
+package com.keyin.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import model.TreeNode;
-import model.TreeRecord;
-import repository.TreeRecordRepository;
+import com.keyin.model.TreeNode;
+import com.keyin.model.TreeRecord;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import com.keyin.repository.TreeRecordRepository;
+
 import java.util.List;
 
 
@@ -48,7 +49,7 @@ public class TreeService {
         for (int num : arr) {
             sb.append(num).append(",");
         }
-        return sb.length() > 0 ? sb.substring(0, sb.length() - 1) : "";
+        return !sb.isEmpty() ? sb.substring(0, sb.length() - 1) : "";
     }
 
     public List<TreeRecord> getAllTrees() {

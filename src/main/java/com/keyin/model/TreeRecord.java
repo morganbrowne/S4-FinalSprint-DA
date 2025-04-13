@@ -1,4 +1,4 @@
-package model;
+package com.keyin.model;
 
 import jakarta.persistence.*;
 

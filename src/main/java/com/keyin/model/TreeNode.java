@@ -1,9 +1,9 @@
-package model;
+package com.keyin.model;
 
 public class TreeNode {
     private int value;
-    private model.TreeNode left;
-    private model.TreeNode right;
+    private TreeNode left;
+    private TreeNode right;
 
     public TreeNode(int value) {
         this.value = value;
@@ -14,19 +14,19 @@ public class TreeNode {
         return value;
     }
 
-    public model.TreeNode getLeft() {
+    public TreeNode getLeft() {
         return left;
     }
 
-    public model.TreeNode getRight() {
+    public TreeNode getRight() {
         return right;
     }
 
-    public void setLeft(model.TreeNode left) {
+    public void setLeft(TreeNode left) {
         this.left = left;
     }
 
-    public void setRight(model.TreeNode right) {
+    public void setRight(TreeNode right) {
         this.right = right;
     }
 }
