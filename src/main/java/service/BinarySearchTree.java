@@ -1,18 +1,25 @@
 package service;
 
+import model.TreeNode;
+
 public class BinarySearchTree {
     private TreeNode root;
 
     public void insert(int value) {
-        root = insertRec(root, value);
+        root = insert(root, value);
+
     }
 
-    private TreeNode insertRec(TreeNode node, int value) {
+    private TreeNode insert(TreeNode node, int value) {
         if (node == null) return new TreeNode(value);
-        if (value < node.value) node.left = insertRec(node.left, value);
-        else node.right = insertRec(node.right, value);
+        if (value < node.getValue()) {
+            node.setLeft(insert(node.getLeft(), value));
+        } else {
+            node.setRight(insert(node.getRight(), value));
+        }
         return node;
     }
+
 
     public TreeNode getRoot() {
         return root;
