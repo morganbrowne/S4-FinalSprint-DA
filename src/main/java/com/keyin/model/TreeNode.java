@@ -8,24 +8,18 @@ public class TreeNode {
     public TreeNode(int value) {
         this.value = value;
     }
-
-    // Getters and setters
     public int getValue() {
         return value;
     }
-
     public TreeNode getLeft() {
         return left;
     }
-
     public TreeNode getRight() {
         return right;
     }
-
     public void setLeft(TreeNode left) {
         this.left = left;
     }
-
     public void setRight(TreeNode right) {
         this.right = right;
     }
